@@ -1,0 +1,306 @@
+/* Resetting default margin and padding for all elements */
+*{
+  margin: 0%;
+  padding: 0%;
+}
+/* Styling for the image container */
+.img-cont{
+  margin: 0;
+  margin-top: -47px;
+  padding: 0;
+  width: 100%;
+   position: relative;
+  height:501.5px;
+  overflow: hidden;
+}
+/* Styling for the overlay on the image container */
+.img-cont .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 450px;
+  background: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+  z-index: 1;
+}
+/* Styling for the logo */
+#logo {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-size: 32px;
+ 
+    padding-top: 1px;
+    font-style: normal;
+    background: linear-gradient(35deg, #ebb103, #FFFFFF);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  /* Styling for the search container */
+  .search-container{
+    display: flex;
+  }
+  /* Styling for the search button */
+  .search-button{
+    height: 26px;
+    width: 85px;
+    /* background-color: #c1c113; */
+    border: none;
+    padding-bottom: 4.5px;
+    margin-top: 1px;
+    font-weight:600;
+    border-radius: 0 10px 0 0px ;
+ } 
+ /* Hover effect for the search button */
+  .search-button:hover{
+    background-color: #010003;
+    cursor: pointer;
+    color: white;
+   transition: 0.2s linear;
+font-size: 18px;
+  } 
+  /* Styling for the search box */
+  .search-box{
+  height: 26px;
+  width: 350px;
+  margin-left: 30px;
+  margin-right:-3px;
+  border: none;
+  padding-bottom: 3.5px;
+  padding-left: 8px;
+  margin-top: 1px;
+  border-radius: 0 0px 0px 10px ;
+  }
+  /* Media query for smaller screens */
+  @media (max-width: 768px){
+    header {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .search-box {
+      width: 150px; 
+  }
+  
+  }
+  /* Hover effect for search container */
+  .search-container:hover .search-box
+  {
+    box-shadow:3px 3px 3px 0px #8f8f8f;
+  }
+  /* Hover effect for search button */
+  .search-container:hover .search-button{
+    box-shadow:3px 3px 3px 0px #8f8f8f;
+    transition: -0.2 ;
+  }
+  .search-box-button{
+    margin-left: 150px;
+    
+  }
+  
+/* Styling for the login button */
+  .btn-login{
+    height: 30px;
+    width: 55px;
+    border: none;
+    /* background-color: #c1c113; */
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: 500;
+  }
+  /* Hover effect for login button */
+  .btn-login:hover{
+    background-color: #010003;
+    cursor: pointer;
+    color:#ffffff;
+   transition: 0.2s linear;
+   font-size: 17px;
+   box-shadow:-1px 1px 1px 0px #8f8f8f;  
+  }
+  .feturtxt{
+    transform: translate(0,-30px);
+     font-weight: 700;
+     font-size: 40px;
+     text-shadow:2px 2px 2px grey ;
+  }
+  /* Styling for the cart image */
+  .cart-img{
+    margin-left: 10px;
+    padding-top: 6px;
+   /* background-color: #c1c113; */
+   -webkit-background-clip: text;
+   color: transparent;
+   font-size: 22px
+  }
+  /* Hover effect for the cart image */
+  .cart-img:hover{
+    cursor: pointer;
+    color: white;
+   font-size: 23px;
+  }
+ 
+  .lihover:hover{
+    cursor: pointer;
+    color: rgb(253, 253, 253);
+    font-size: 15px;
+   /* background-color: #0b0b0b; */
+    font-weight: bold;
+   
+  }
+.img-cont {
+    position: relative;
+}
+
+.img-cont .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 455px;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
+}
+
+.center-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2; 
+}
+.center-text h2 {
+    margin-bottom: 10px;
+}
+
+.center-text p {
+    margin: 0;
+    padding-bottom: 50px;
+    margin-bottom:80px; ;
+}
+.main-text{
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #FFFFFF;
+  font-size: 50px;
+  text-shadow: 2px 2px 2px rgb(196, 194, 194);
+  padding-top: 10%;
+  z-index: 1;
+}
+@media (max-width: 768px){
+  
+ .main-text{
+      font-size: 80px;
+    }
+    .center-text span{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+}
+footer{
+  background-color: #212020;
+  color: white;
+  height: 200px;
+  border: none;
+}
+.footer-grid{
+  display: flex;
+  justify-content: space-around;
+}
+.footer-column h4{
+cursor: pointer;
+}
+ul {
+  list-style-type: none;
+  padding: 0; 
+  margin: 0; 
+}
+ul  a {
+  text-decoration: none;
+  color: #fefefe;
+}
+ul li a:hover, ol li a:hover {
+  text-decoration:underline;
+  color: #dfdede;
+  border: none; 
+}
+@media  (max-width:768px) {
+ footer{
+  height: 500px;
+}
+.footer-grid{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  text-align: center;
+}
+}
+.carousel-container{
+ 
+  position: relative;
+  width: 100%;
+  top: 100%;
+  margin-top: -10px;
+  background-color: #b7b4b470;
+  height: 450px;
+transform: translate(0 ,-36px);
+}
+.carousel-container h2{
+  text-shadow: 1px -2px 1px rgb(50, 50, 50);
+  padding-bottom: 10px;
+}
+.carousel-container img {
+  width: 100%;
+  height: auto;
+}
+.cart-btn{
+  background-color: #c1c113;
+  border: none;
+  border-radius: 2px;
+  margin-top: 5px;
+  font-weight: 500;
+  text-align: center;
+  font-size: 14px;
+  width: 80%;
+ margin-top: 10px;
+  /* margin-left: 10%; */
+  z-index: 2;
+  position: absolute;
+  /* bottom: 0; */
+  left: 50%;
+  transform: translateX(-50%); 
+}
+.card-bodystyle {
+  position: relative;
+}
+ .cart-btn-img:hover .cart-btn{
+  color:#ffffff;
+  background-color: #010003;
+  cursor: pointer;
+  /* color:#ffffff; */
+ transition: 0.3s linear; 
+} 
+.cart-btn-img:hover .cart-i{
+  color:#ffffff;
+  transition: 0.3s linear;
+} 
+ .cart-btn i{ 
+  font-size: 15px;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  color: rgb(5, 5, 5); 
+   transition: 0.2s linear; 
+   cursor: pointer;
+  padding-bottom: 5px;
+} 
+.cardstyle{
+  border: 1px solid;
+  height: 360px;
+}
+.cardstyle img{
+  height: 150px;
+} 
